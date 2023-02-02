@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1675085269294"
+    createdUser="paransha.vyas" id="72c64d88:186021dfd31:-7e7c"
+    selfDescribing="httpbin.org (52.200.117.68)"
+    type="host_machine_resource" updatedTimestamp="1675085269294"
+    updatedUser="paransha.vyas" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="52.200.117.68" user_host_name="httpbin.org">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

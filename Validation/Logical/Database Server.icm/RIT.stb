@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1675159952858"
+    createdUser="paransha.vyas" id="-5d6e26c9:18602e640fe:-7e53"
+    type="stub_resource" updatedTimestamp="1675250846637"
+    updatedUser="paransha.vyas" version="1.1">
+    <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
+    <resourceConfig description="" name="">
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <stubprops behaviourStyle="ONE_TO_ONE"
+            includeContractValidationOption="false" majorVersion="1"
+            messageClearance="false" minorVersion="0" optimise="false"
+            sendErrorResponseOption="false" wrks="10">
+            <responseTimeTable>
+                <entry key="-5d6e26c9:18602e640fe:-7e0f">
+                    <value type="NO_DELAY"/>
+                </entry>
+            </responseTimeTable>
+            <environmentTasks preventExecutionOnFailure="false"/>
+        </stubprops>
+        <Session mode="NONE"/>
+    </resourceConfig>
+</editableResource>

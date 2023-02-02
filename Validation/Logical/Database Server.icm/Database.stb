@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1674475991166"
+    createdUser="paransha.vyas" id="-4b532d69:185de8a7b58:-7e80"
+    type="stub_resource" updatedTimestamp="1674475991166"
+    updatedUser="paransha.vyas" version="1.1">
+    <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
+    <resourceConfig description="" name="">
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <Session mode="NONE"/>
+    </resourceConfig>
+</editableResource>

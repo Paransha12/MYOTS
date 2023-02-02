@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_c buildID="I20220518_1207" certificateAuthority="KEY_1024_BITS"
+    comments="Project created on 23 January 2023"
+    creationVersion="10.2.3" domain="Validation" extDocPrefix=""
+    name="Validation" owner="paransha.vyas"
+    rulesCacheUri="%%PROJECT/ROOT%%Rules" uuid="00000185-de8a-7a96-0003-b99bd25f5340">
+    <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace=""/>
+    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
+    <serverSettings
+        ghRepositoryURL="https://lp1-ap-52016888.prod.hclpnp.com:5443/RTCP/"
+        trustSource="INBUILT_CA" trustStorePath="">
+        <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
+            <connectionParams ZOSEnv="false"
+                dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+                dpsOption="false" dpsPass="#com.ghc.1!0a4f" dpsUser=""
+                driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                password="#com.ghc.1!0899A2CB7275117C552A0CB36A7140B1214C7E40"
+                url="jdbc:sqlserver://localhost:1433;databasename=Validation" user="Paransha">
+                <dpsSsl useSsl="false"/>
+                <stubSettings maxProcCallCount="10000"
+                    maxResultSetRowCount="10000" maxRowCount="10000"
+                    password="#com.ghc.1!69c6"
+                    procedureLearningBehaviour="1" schema="" url=""
+                    useIntegratedDB="true" useSsl="false" user=""/>
+                <storedProcedureFilter catalogFilterEnabled="false"
+                    catalogFilterPattern=""
+                    procedureFilterEnabled="false"
+                    procedureFilterPattern="" schemaFilterEnabled="true"
+                    schemaFilterPattern="Paransha"
+                    storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+                <timestampFormatting timestampFormatZero="false"
+                    timestampFormattingEnabled="false" timestampPrecision="9"/>
+            </connectionParams>
+        </dbConnectionParameters>
+        <automationServer enabled="false"
+            hostname="https://hcl-onetest.sbx0356.play.hclsofy.com/#/Initial/project/"
+            port="443" projectId="-1"
+            projectName="--No Project Selected--" publishResults="false"
+            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!1512" trustStorePath=""/>
+    </serverSettings>
+    <permissionsSettings ADtrustSource="NONE"
+        ADtrustStorePassword="#com.ghc.1!c88c" ADtrustStorePath=""
+        autoLogin="true" host="AP-PNP-DC02"
+        permFactId="rtcp.permissions.factory.none" port="389" pswd="7RBYM6N12yuUAUGdRmWIPni3huRyTPVwMcu1tbTLOzs=$MFPsI2ooicDLDHZYo5JGmIafH+uQXHkGNd54RGIVMZQ="/>
+    <resultPublishers disableAll="false"/>
+</_c>

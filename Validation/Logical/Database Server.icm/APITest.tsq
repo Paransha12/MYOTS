@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1674476001862"
+    createdUser="paransha.vyas" id="-4b532d69:185de8a7b58:-7e76"
+    type="test_resource" updatedTimestamp="1675251581832"
+    updatedUser="paransha.vyas" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="-4b532d69:185de8a7b58:-7e04"
+                selfDescribing="The SQL Query action is used for executing an SQL SELECT statement against the selected database connection. Query results may be validated or stored using the Assert and Store tabs; sample result sets may be configured by running the query using the Test button."
+                type="sql_query_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig assertCellResults="false"
+                    assertColumnResults="false"
+                    callableStatement="false" description=""
+                    interval="0"
+                    name="&quot;select Name from DBTable&quot;"
+                    repeat="false"
+                    sqlStatement="select Name from DBTable"
+                    timeOffset="19800000" timeout="0" validateTypes="false">
+                    <dbserverid id="-4b532d69:185de8a7b58:-7ebe"
+                        lkname="Database Server"
+                        lkpath="Database Server" type="infrastructure_component_resource"/>
+                    <dataModel>
+                        <_c columnName="Name" columnType="7">
+                            <columnData name="Name" type="7" version="1.2"/>
+                            <_c meTy="String" type="7" value="Paransha" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction exp="Paransha" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                    </dataModel>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="-4b532d69:185de8a7b58:-7de0"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true" loggingMessage="%%Output%%"
+                    name="%%Output%%"
+                    outputFile="%%PROJECT/ROOT_DIRECTORY%%/Output" role="0"/>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="SELECT" outputMode="SELECT">
+            <tag defaultValue="" description="" name="newTag"/>
+            <tag defaultValue="" description="" name="Output">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="newTag3"/>
+            <tag defaultValue="" description="" name="newTag2"/>
+            <tag defaultValue="" description="" name="Timestamp_name">
+                <tagProps>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

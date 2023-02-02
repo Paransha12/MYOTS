@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1674475919754"
+    createdUser="paransha.vyas" id="-4b532d69:185de8a7b58:-7ebd"
+    selfDescribing="Microsoft SQL Server (MS) (Database Server) [jdbc:sqlserver://localhost:1433;databasename=Validation, Paransha]"
+    type="database_connection_resource" updatedTimestamp="1674475969113"
+    updatedUser="paransha.vyas" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig maxConnections="1" poolName="DefaultPoolName" transportName="Database Server">
+        <connectionParams ZOSEnv="false"
+            dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+            dpsOption="false" dpsPass="#com.ghc.1!f520" dpsUser=""
+            driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+            password="#com.ghc.1!dd52A2C07270117F55360CBC6A4340F9213E7E4112CE"
+            schema=""
+            url="jdbc:sqlserver://localhost:1433;databasename=Validation"
+            useSsl="false" user="Paransha">
+            <dpsSsl useSsl="false"/>
+            <stubSettings maxProcCallCount="10000"
+                maxResultSetRowCount="10000" maxRowCount="10000"
+                password="#com.ghc.1!c8f0"
+                procedureLearningBehaviour="1" schema=""
+                url="jdbc:sqlserver://localhost:1433;databasename=&lt;database name>"
+                useIntegratedDB="true" useSsl="false" user=""/>
+            <storedProcedureFilter catalogFilterEnabled="false"
+                catalogFilterPattern="" procedureFilterEnabled="false"
+                procedureFilterPattern="" schemaFilterEnabled="true"
+                schemaFilterPattern=""
+                storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false"
+                timestampFormattingEnabled="true" timestampPrecision="9"/>
+        </connectionParams>
+    </resourceConfig>
+</editableResource>
