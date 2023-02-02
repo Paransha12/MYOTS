@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1673974264048"
+    createdUser="Katherine.Carroll" id="4a4fc8b9:185c0a41f6c:-7e95"
+    selfDescribing="jigsaw.w3.org (104.18.22.19) - System Statistics (default)"
+    type="probe_resource" updatedTimestamp="1673974264048"
+    updatedUser="Katherine.Carroll" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig defaultFlag="true" name="default"
+        physicalResourceID="4a4fc8b9:185c0a41f6c:-7e9b" probeID="plugin.custom.SysStat">
+        <SysStatDatasource allProcesses="true" configuration="default"/>
+    </resourceConfig>
+</editableResource>

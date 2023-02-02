@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1673973112627"
+    createdUser="Katherine.Carroll" id="12fc42ce:185c0917847:-7ebd"
+    type="infrastructure_component_resource"
+    updatedTimestamp="1673980156533" updatedUser="Katherine.Carroll" version="1.1">
+    <documentation>
+        <description value="&#xa;https://jigsaw.w3.org/HTTP/Basic/&#xa;This link point to a protected resource, to access it, the user is &quot;guest&quot; and the password is also &quot;guest&quot;."/>
+    </documentation>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig infrastructureType="http_transport">
+        <recordingSettings colour="124,199,255"/>
+    </resourceConfig>
+</editableResource>

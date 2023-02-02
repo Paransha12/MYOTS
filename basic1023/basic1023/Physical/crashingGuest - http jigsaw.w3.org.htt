@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1673973671627"
+    createdUser="Katherine.Carroll" id="12fc42ce:185c0917847:-7c50"
+    selfDescribing="crashingGuest - http jigsaw.w3.org"
+    type="http_transport" updatedTimestamp="1673980143439"
+    updatedUser="Katherine.Carroll" version="1.0">
+    <documentation>
+        <description value="&#xa;https://jigsaw.w3.org/HTTP/Basic/&#xa;This link point to a protected resource, to access it, the user is &quot;guest&quot; and the password is also &quot;guest&quot;."/>
+    </documentation>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="crashingGuest" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="No Stub available that matches the request"
+            clientConnectionsPerHost="100" credDomain=""
+            credPassword="#com.ghc.1!a4b940E7210B7E16128E4AD9"
+            credPreemptive="false" credType="1" credUser="partycrasher"
+            httpHost="jigsaw.w3.org" httpNtlmDomain="" httpPort=""
+            httpProxyHost="" httpProxyPassword="#com.ghc.1!e91a"
+            httpProxyPort="" httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            recType="PROXY" useSsl="false" version="4">
+            <kerberos Anon="false" Conf="false" Custom="true"
+                Enabled="false" Integ="false" KDC="" Loc=""
+                MutAuth="false" Principal="" Pwd="#com.ghc.1!dfd2"
+                Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+            <serverAuthentication>
+                <authenticationConfig enabled="false" realm="" type="1"/>
+                <authenticationConfig algorithm="" authParams=""
+                    domain="" enabled="false" nonce="false" opaque=""
+                    qop="" realm="" stale="" type="2"/>
+                <authenticationConfig enabled="false" type="3"/>
+                <authenticationConfig enabled="false" type="5"/>
+            </serverAuthentication>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>

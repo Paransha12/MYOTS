@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1673973379283"
+    createdUser="Katherine.Carroll" id="12fc42ce:185c0917847:-7cfa"
+    type="test_resource" updatedTimestamp="1673980161486"
+    updatedUser="Katherine.Carroll" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="12fc42ce:185c0917847:-7cf8"
+                selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
+                type="send_request_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; on resource &quot;/HTTP/Basic&quot; using schema &quot;Text&quot; via &quot;srv&quot;" transport="12fc42ce:185c0917847:-7ebd">
+                    <headerMessage name="" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="MessageType" type="7"
+                            value="http.text.message.type" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="Method" type="7"
+                            value="GET" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction exp="GET" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="URL" type="7"
+                            value="/HTTP/Basic" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction exp="/HTTP/Basic" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version" type="7"
+                                value="1.1" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="1.1" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                type="8" value="true" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                    </headerMessage>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="text" sch="Text" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="12fc42ce:185c0917847:-7cf4"
+                selfDescribing="Receive and validate a response to the request you have sent."
+                type="receive_reply_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; using schema &quot;Text&quot;"
+                    sendRequestID="12fc42ce:185c0917847:-7cf8" transport="12fc42ce:185c0917847:-7ebd">
+                    <headerMessage assocdefid="Http Receive Reply"
+                        meTy="Message" name="" sch="Http Receive Reply"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="true"
+                                    ignoreExtra="true"
+                                    ignoreNonPresent="true" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="StatusCode"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction exp="200" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="ReasonPhrase"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction exp="OK" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails"
+                            sch="Http Receive Reply" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version"
+                                sch="Http Receive Reply" type="7" version="1.2"/>
+                            <_c meTy="Message" name="httpHeaders"
+                                sch="Http Receive Reply" type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                        <_c meTy="String" name="MessageType"
+                            sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="Http Receive Reply" type="11" version="1.2"/>
+                    </headerMessage>
+                    <subconfig MessageType="http.text.message.type"
+                        URL="" _version="1.1" allowSubPath="false"
+                        consumerType="Participate" filterHeaders="false"
+                        filterMethod="false" filterResourcePath="false"
+                        formatter="HTTP_Message" transport="12fc42ce:185c0917847:-7ebd"/>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="text" sch="Text" type="7"
+                            value="&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;>&#xa;&lt;html>&#xa;  &lt;head>&#xa;    &lt;title>Basic Authentication test page&lt;/title>&#xa;&lt;!-- Changed by: Yves Lafon, 22-Feb-1999 -->&#xa;  &lt;/head>&#xa;&#xa;&lt;BODY BGCOLOR=&quot;white&quot;>&#xa;&lt;P>&#xa;      &lt;A HREF=&quot;..&quot;>&lt;IMG SRC=&quot;/icons/jigsaw&quot; ALT=&quot;Jigsaw&quot; BORDER=&quot;0&quot; WIDTH=&quot;212&quot;&#xa;&#x9;  HEIGHT=&quot;49&quot;>&lt;/A>&lt;IMG SRC=&quot;/icons/jigpower.gif&quot; WIDTH=&quot;94&quot; HEIGHT=&quot;52&quot; ALT=&quot;Jigsaw Powered !&quot;&#xa;&#x9;BORDER=&quot;0&quot; ALIGN=&quot;Right&quot;>&#xa;      &#xa;&lt;P>&#xa;&lt;HR>&#xa;&lt;P>Your browser made it!&#xa;  &lt;/body>&#xa;&lt;/html>&#xa;" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction
+                                    exp="&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;>&#xa;&lt;html>&#xa;  &lt;head>&#xa;    &lt;title>Basic Authentication test page&lt;/title>&#xa;&lt;!-- Changed by: Yves Lafon, 22-Feb-1999 -->&#xa;  &lt;/head>&#xa;&#xa;&lt;BODY BGCOLOR=&quot;white&quot;>&#xa;&lt;P>&#xa;      &lt;A HREF=&quot;..&quot;>&lt;IMG SRC=&quot;/icons/jigsaw&quot; ALT=&quot;Jigsaw&quot; BORDER=&quot;0&quot; WIDTH=&quot;212&quot;&#xa;&#x9;  HEIGHT=&quot;49&quot;>&lt;/A>&lt;IMG SRC=&quot;/icons/jigpower.gif&quot; WIDTH=&quot;94&quot; HEIGHT=&quot;52&quot; ALT=&quot;Jigsaw Powered !&quot;&#xa;&#x9;BORDER=&quot;0&quot; ALIGN=&quot;Right&quot;>&#xa;      &#xa;&lt;P>&#xa;&lt;HR>&#xa;&lt;P>Your browser made it!&#xa;  &lt;/body>&#xa;&lt;/html>&#xa;" type="0"/>
+                                </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'text'"
+                                    tN="text" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="-30e0c340:185c0d057bf:-7d05"
+                selfDescribing="Enable the user to interact with the test as it runs.  A dialogue will provide information the user and prompt for a response."
+                type="user_interaction_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" displaytext="%%text%%"
+                    enabled="false" name="message %%text%%&quot;"
+                    requestdetails="false" storetag="" timeout="0" useroptions="2"/>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE">
+            <tag defaultValue="" description="" name="text"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

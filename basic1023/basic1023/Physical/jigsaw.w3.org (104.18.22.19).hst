@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1673974263080"
+    createdUser="Katherine.Carroll" id="4a4fc8b9:185c0a41f6c:-7e9b"
+    selfDescribing="jigsaw.w3.org (104.18.22.19)"
+    type="host_machine_resource" updatedTimestamp="1673974263080"
+    updatedUser="Katherine.Carroll" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="104.18.22.19" user_host_name="jigsaw.w3.org">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>
